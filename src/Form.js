@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 
-const Form = (props) => {
+const Form = () => {
     const [nameState, setName] = useState({});
     const navigate = useNavigate()
 
@@ -42,7 +42,7 @@ const Form = (props) => {
             payload: nameState
         })
 
-    }, [nameState])
+    }, [dispatch,nameState])
     return (
         <>
            

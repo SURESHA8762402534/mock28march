@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+
 import { useSelector } from 'react-redux';
 
 const Profilecard = () => {
@@ -16,7 +16,7 @@ const Profilecard = () => {
                 <div className="col-4">
                     <div className="card" style={{width: "18rem"}}>
                         <div className="card-header">
-                        <img style={{width:"2rem", height:"2rem"}} className="card-img-top" src={Data.data.Photo} alt="Card image cap" />
+                        <img style={{width:"2rem", height:"2rem"}} className="card-img-top" src={Data.data.Photo} alt="Card imag cap" />
                         </div>
                         <div className="card-body">
                             <h2 className="card-title ">{Data.data.Name}</h2>
